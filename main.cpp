@@ -60,12 +60,12 @@ int main() {
          << endl;
   } else {
     cout << "Anagrams found for the word '" << word << "':" << endl;
-    int num=0;
+    int count = 1;
     for (const string &anagram : anagrams) {
-      num+=1;
-      string number = num+".";
-      cout << number << anagram << endl;
+      cout << count << ". " << anagram << endl;
+      ++count;
     }
+
   }
 
   return 0;
